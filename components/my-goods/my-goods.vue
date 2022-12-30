@@ -19,6 +19,8 @@
 
 <script>
   export default {
+	    // 定义 props 属性，用来接收外界传递到当前组件的数据
+
     props: {
       goods: {
         type: Object,
@@ -55,8 +57,10 @@
       },
       // 监听到了 NumberBox 组件数量变化的事件
       numChangeHandler(val) {
+		  // 通过emit将事件传递给外界的 num-change
         this.$emit('num-change', {
           goods_id: this.goods.goods_id,
+		  //val是变化后最新的值
           goods_count: +val
         })
       }

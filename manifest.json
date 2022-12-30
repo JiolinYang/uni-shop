@@ -47,6 +47,7 @@
             "urlCheck" : true,
 			"checkSitweMap":false,
             "postcss" : true
-        }
+        },
+		"requiredPrivateInfos": ["getLocation", "chooseLocation", "chooseAddress"]
     }
 }
